@@ -1,1 +1,22 @@
-<p>home works!</p>
+<div class="container container-background">
+  <div class="row">
+    <div class="col-d-12"><h1 class="header">SpaceX Launch Programs</h1></div>
+  </div>
+
+  <main>
+    <div class="row">
+      <div class="col-d-2 col-t-3">
+        <app-launch-filter></app-launch-filter>
+      </div>
+      <div class="col-d-10 col-t-9 right-panel">
+        <div class="row">
+          <div class="col-d-3 col-t-6" *ngFor="let launch of launches">
+            <app-rocket [launch]="launch"></app-rocket>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer"><span>Developed by: </span> Rishabh Mishra</footer>
+</div>

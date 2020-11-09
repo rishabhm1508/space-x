@@ -7,6 +7,8 @@ import { HomeComponent } from './components/home/home.component';
 import { RocketComponent } from './components/rocket/rocket.component';
 import { LaunchFilterComponent } from './components/launch-filter/launch-filter.component';
 import { SpinnerComponent } from './core/spinner/spinner.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { SpinnerComponent } from './core/spinner/spinner.component';
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,16 +1,17 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { HttpClientModule } from "@angular/common/http";
+import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { LaunchFilterComponent } from './launch-filter.component';
+import { LaunchFilterComponent } from "./launch-filter.component";
 
-describe('LaunchFilterComponent', () => {
+describe("LaunchFilterComponent", () => {
   let component: LaunchFilterComponent;
   let fixture: ComponentFixture<LaunchFilterComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LaunchFilterComponent ]
-    })
-    .compileComponents();
+      declarations: [LaunchFilterComponent],
+      imports: [HttpClientModule],
+    }).compileComponents();
   }));
 
   beforeEach(() => {
@@ -19,7 +20,7 @@ describe('LaunchFilterComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });

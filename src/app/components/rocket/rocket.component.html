@@ -1,1 +1,50 @@
-<p>rocket works!</p>
+<section class="rocket-card-background">
+  <div class="rocket-card-content">
+    <div class="image-container">
+      <figure>
+        <img
+          class="image-details"
+          src="{{ launch?.links.mission_patch }}"
+          alt="Rocket Logo"
+        />
+      </figure>
+    </div>
+    <div class="text-details text-details-name-id">
+      <h5 class="rocket-name">
+        {{ launch?.mission_name }} #{{ launch?.flight_number }}
+      </h5>
+      <label class="font-medium">
+        <span class="rocket-id-label"> Mission Ids: </span>
+        <span class="rocket-id-value">
+          <ul *ngIf="launch?.mission_id.length > 0; else noId">
+            <li class="font-medium" *ngFor="let id of launch?.mission_id">
+              {{ id }}
+            </li>
+          </ul>
+          <ng-template #noId>
+            <ul>
+              <li class="font-medium">Not Available</li>
+            </ul>
+          </ng-template>
+        </span>
+      </label>
+    </div>
+
+    <div class="text-details">
+      <label>
+        <span class="rocket-id-label">Launch Year </span> :
+        <span class="rocket-id-value">{{ launch?.launch_year }} </span>
+      </label>
+    </div>
+
+    <div class="text-details">
+      <label class="rocket-id-label">Successful Launch </label> :
+      <label class="rocket-id-value">{{ launch?.launch_success }} </label>
+    </div>
+
+    <div class="text-details">
+      <label class="rocket-id-label">Successful Landing </label> :
+      <label class="rocket-id-value">{{ getLandStatus(launch) }} </label>
+    </div>
+  </div>
+</section>

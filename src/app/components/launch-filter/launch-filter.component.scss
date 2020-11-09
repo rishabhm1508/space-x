@@ -1,0 +1,106 @@
+@import "src/css/mixins";
+
+.year-btn-container {
+  @include btn-container(12%);
+}
+
+.d-flex {
+  &-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &-label {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.filter {
+  &-background {
+    background-color: $white;
+    border-radius: 2%;
+    padding-bottom: 15%;
+  }
+  &-header {
+    margin: 0px;
+    padding-top: 1%;
+    padding-left: 5%;
+  }
+}
+
+.btn-success-container {
+  @include btn-container(14%);
+}
+
+.year-buttons {
+  @include radioButton("yearRadio");
+}
+
+.button {
+  &-year {
+    @include radioButton("yearRadio");
+  }
+  &-launch {
+    @include radioButton("successLaunch");
+  }
+  &-land {
+    @include radioButton("successLand");
+  }
+}
+
+.btn-labels {
+  border-bottom: 1px solid $launch-label-border;
+  padding: 0 1%;
+  margin-bottom: 1%;
+}
+
+@media only screen and (min-width: 400px) and (max-width: 700px) {
+  .year-btn-container {
+    @include btn-container(30%);
+  }
+
+  .filter-header {
+    padding-left: 5%;
+    padding-top: 5%;
+  }
+
+  .reset-btn-padding {
+    padding: 2% 4% !important;
+  }
+
+  .btn-success-container {
+    @include btn-container(31%);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .btn-success-container {
+    @include btn-container(24%);
+  }
+
+  .filter-header {
+    padding-left: 5%;
+    padding-top: 5%;
+  }
+
+  .year-btn-container {
+    @include btn-container(22%);
+  }
+}
+
+.reset-btn {
+  background-color: $reset-btn;
+  padding: 4%;
+  border: none;
+  border-radius: 8%;
+  outline: none;
+  cursor: pointer;
+  &:hover {
+    background-color: $reset-btn-hover;
+  }
+  &-container {
+    display: flex;
+    justify-content: center;
+  }
+}

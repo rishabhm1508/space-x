@@ -1,0 +1,22 @@
+@import "src/css/variables";
+
+.container-background {
+  background-color: $light-gray;
+}
+
+.right-panel {
+  padding-top: 0;
+}
+
+.header {
+  margin: 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 1%;
+  & > span {
+    font-weight: bolder;
+  }
+}

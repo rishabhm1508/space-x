@@ -1,0 +1,60 @@
+@import "src/css/mixins";
+
+.rocket-card {
+  &-background {
+    background-color: $white;
+    border-radius: 5%;
+    padding: rem-calc(12);
+  }
+  &-content {
+    display: flex;
+    flex-flow: column;
+  }
+}
+
+.font-medium {
+  font-size: medium;
+}
+
+.image {
+  &-container {
+    background-color: $light-gray;
+    display: flex;
+    justify-content: center;
+    & > figure {
+      margin: 0px;
+    }
+  }
+  &-details {
+    height: inherit;
+    width: 100%;
+  }
+}
+
+.rocket {
+  &-name {
+    color: $rocket-name-label;
+    font-weight: bolder;
+    margin: rem-calc(10) 0;
+  }
+  &-id {
+    &-label {
+      font-weight: bolder;
+    }
+    &-value {
+      color: $rocket-name-label;
+      & > ul {
+        margin: 4px 0;
+      }
+    }
+  }
+}
+
+.text-details {
+  display: inline;
+  padding: 3% 0;
+  &-name-id {
+    height: rem-calc(120);
+    max-height: fit-content;
+  }
+}
