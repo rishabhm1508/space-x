@@ -4,21 +4,21 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Application Deployment
 
-Without SSR:
-	1. Clone or the repository in a folder in local machine (https://github.com/rishabhm1508/space-x.git) or download it.
-	2. Open cmd and execute 'cd space-x' command.
-	3. Once inside the code repository, execute 'npm i' in cmd at the same location.
-	4. Execute 'ng build' to build the project.
-	5. Execute 'ng serve' to serve the project.
-	6. Navigate to `http://localhost:4200/` to run the application in browser.
+### Without SSR:
+1. Clone or the repository in a folder in local machine (https://github.com/rishabhm1508/space-x.git) or download it.
+2. Open cmd and execute 'cd space-x' command.
+3. Once inside the code repository, execute 'npm i' in cmd at the same location.
+4. Execute 'ng build' to build the project.
+5. Execute 'ng serve' to serve the project.
+6. Navigate to `http://localhost:4200/` to run the application in browser.
 	
-With SSR:
-	1. Clone or the repository in a folder in local machine (https://github.com/rishabhm1508/space-x.git) or download it.
-	2. Open cmd and execute 'cd Space-x' command.
-	3. Once inside the code repository, execute 'npm i' in cmd at the same location.
-	4. Execute 'npm run build:ssr' to build the project.
-	5. Execute 'npm run serve:ssr' to serve the project.
-	6. Navigate to `http://localhost:4000/` to run the application in browser.
+### With SSR:
+1. Clone or the repository in a folder in local machine (https://github.com/rishabhm1508/space-x.git) or download it.
+2. Open cmd and execute 'cd Space-x' command.
+3. Once inside the code repository, execute 'npm i' in cmd at the same location.
+4. Execute 'npm run build:ssr' to build the project.
+5. Execute 'npm run serve:ssr' to serve the project.
+6. Navigate to `http://localhost:4000/` to run the application in browser.
 
 ## Code scaffolding
 
