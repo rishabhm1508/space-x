@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  spaceXServiceRoot: "https://api.spaceXdata.com/v3/launches?limit=100",
+  production: true,
 };

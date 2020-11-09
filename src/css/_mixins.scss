@@ -1,0 +1,35 @@
+@import "src/css/functions";
+@import "src/css/variables";
+
+@mixin year {
+  padding: rem-calc(4) rem-calc(12);
+  border: none;
+  border-radius: 8%;
+  outline: none;
+}
+
+@mixin filter-labels($pad-left, $pad-right) {
+  border-bottom: 1px solid $launch-label-border;
+  padding-right: rem-calc($pad-right);
+  padding-left: rem-calc($pad-left);
+}
+
+@mixin radioButton($name) {
+  input[name=#{$name}] {
+    display: none;
+  }
+  input[name=#{$name}] + label {
+    @include year;
+    background-color: $not-selected-color;
+  }
+  
+  input[name=#{$name}]:checked + label {
+    @include year;
+    background-color: $selected-color;
+  }
+}
+
+@mixin btn-container($padding-x) {
+  padding: 0px #{$padding-x};
+  margin-bottom: 10%;
+}
